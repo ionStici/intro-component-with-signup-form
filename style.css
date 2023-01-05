@@ -198,6 +198,11 @@ body {
   padding: 1.5rem 4.3rem;
   cursor: pointer;
   transition: background-color 0.2s, transform 0.2s;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .form button:hover {
   background-color: #77e2b3;
