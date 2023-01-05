@@ -99,7 +99,7 @@ body {
   max-width: 70rem;
   margin: 0 auto 2.4rem auto;
   text-align: center;
-  background-color: #5e54a4;
+  background-color: rgb(94, 84, 164);
   box-shadow: 0 0.8rem 0 rgba(0, 0, 0, 0.1469);
   border-radius: 1rem;
   padding: 1.8rem 6.6rem;
@@ -147,6 +147,10 @@ body {
   margin-bottom: 0.8rem;
 }
 
+:root {
+  --color-input-placeholder: rgba(61, 59, 72, 0.75);
+}
+
 .form {
   max-width: 70rem;
   margin: 0 auto;
@@ -175,9 +179,10 @@ body {
   padding: 1.5rem 1.95rem;
   border-radius: 0.5rem;
   border: 1px solid #dedede;
+  margin: 1px;
 }
 .form input::placeholder {
-  color: rgba(61, 59, 72, 0.75);
+  color: var(--color-input-placeholder);
 }
 .form input:focus {
   outline: none;
@@ -219,6 +224,7 @@ body {
   right: 2rem;
   transform: translateY(-50%);
   opacity: 0;
+  transition: opacity 0.15s;
 }
 @media only screen and (min-width: 72em) {
   .form__error-icon {
@@ -235,6 +241,7 @@ body {
   line-height: 1.6rem;
   color: #ff7979;
   opacity: 0;
+  transition: opacity 0.15s;
 }
 @media only screen and (min-width: 72em) {
   .form__error-message {
