@@ -1,3 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 21.75em) {
+  html {
+    font-size: 9px;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  background-color: #ff7979;
+  background-image: url(./images/bg-intro-mobile.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+  letter-spacing: -0.291667px;
+  color: #ffffff;
+}
+
+.paragraph {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #ffffff;
+}
+
+.header {
+  text-align: center;
+  max-width: 70rem;
+  margin: 8.8rem auto 6.4rem auto;
+  padding: 0 2.4rem;
+}
+
+.main {
+  padding: 0 2.4rem 6.8rem 2.4rem;
+}
+
+.card {
+  max-width: 70rem;
+  margin: 0 auto 2.4rem auto;
+  text-align: center;
+  background-color: #5e54a4;
+  box-shadow: 0 0.8rem 0 rgba(0, 0, 0, 0.1469);
+  border-radius: 1rem;
+  padding: 1.8rem 6.6rem;
+}
+.card__p {
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.267857px;
+  color: #ffffff;
+}
+.card__p--up {
+  font-weight: 700;
+}
+.card__p--down {
+  font-weight: 400;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.6rem;
+}
+
+.u-margin-bottom-16px-20px {
+  margin-bottom: 1.6rem;
+}
+
+.u-margin-bottom-8px {
+  margin-bottom: 0.8rem;
+}
 
 /*# sourceMappingURL=style.css.map */
