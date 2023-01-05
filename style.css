@@ -92,4 +92,83 @@ body {
   margin-bottom: 0.8rem;
 }
 
+.form {
+  max-width: 70rem;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0.8rem 0 rgba(0, 0, 0, 0.1469);
+  padding: 2.4rem;
+  border-radius: 1rem;
+}
+.form label {
+  display: block;
+  position: relative;
+}
+.form input {
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.25px;
+  color: #3d3b48;
+  padding: 1.5rem 1.95rem;
+  border-radius: 0.5rem;
+  border: 1px solid #dedede;
+}
+.form input::placeholder {
+  color: rgba(61, 59, 72, 0.75);
+}
+.form input:focus {
+  outline: none;
+  border: 1px solid #5e54a4;
+}
+.form button {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #38cc8b;
+  box-shadow: 0 -0.4rem 0 0 rgba(0, 0, 0, 0.0909) inset;
+  color: #fff;
+  padding: 1.5rem 4.3rem;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+.form button:hover {
+  background-color: #77e2b3;
+}
+.form button:active {
+  transform: scale(0.97);
+}
+.form__terms {
+  margin: 0 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 2.1rem;
+  text-align: center;
+  color: #bab7d4;
+}
+.form__terms__link, .form__terms__link:link, .form__terms__link:visited {
+  text-decoration: none;
+  font-weight: 700;
+  color: #ff7979;
+}
+.form__error-icon {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+.form__error-message {
+  position: absolute;
+  bottom: -1.5rem;
+  right: 0.5rem;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  color: #ff7979;
+  opacity: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
