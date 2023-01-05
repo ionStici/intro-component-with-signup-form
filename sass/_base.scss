@@ -35,6 +35,21 @@ body {
     background-image: url(./images/bg-intro-mobile.png);
     background-position: center;
     background-size: cover;
+
+    @media only screen and (min-width: 45em) {
+        background-image: url(./images/bg-intro-desktop.png);
+    }
+
+    // 70*16=1120
+    @media only screen and (min-width: 72em) {
+        display: grid;
+        grid-template-columns: 52.5rem 54rem;
+        grid-template-rows: 55.8rem;
+        column-gap: 4.5rem;
+        margin: 12.1rem auto;
+        width: 112rem;
+        align-items: center;
+    }
 }
 
 .h1 {
@@ -43,6 +58,12 @@ body {
     line-height: 3.6rem;
     letter-spacing: -0.291667px;
     color: #ffffff;
+
+    @media only screen and (min-width: 72em) {
+        font-size: 5rem;
+        line-height: 5.5rem;
+        letter-spacing: -0.520833px;
+    }
 }
 
 .paragraph {
@@ -50,6 +71,9 @@ body {
     font-size: 1.6rem;
     line-height: 2.6rem;
     color: #ffffff;
+
+    @media only screen and (min-width: 72em) {
+    }
 }
 
 // HEADER
@@ -59,12 +83,25 @@ body {
     max-width: 70rem;
     margin: 8.8rem auto 6.4rem auto;
     padding: 0 2.4rem;
+
+    @media only screen and (min-width: 72em) {
+        grid-column: 1 / 2;
+        max-width: revert;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
 }
 
 // CARD
 
 .main {
     padding: 0 2.4rem 6.8rem 2.4rem;
+
+    @media only screen and (min-width: 72em) {
+        grid-column: 2 / 3;
+        padding: 0;
+    }
 }
 
 .card {
@@ -75,6 +112,13 @@ body {
     box-shadow: 0 0.8rem 0 rgba(0, 0, 0, 0.1469);
     border-radius: 1rem;
     padding: 1.8rem 6.6rem;
+
+    @media only screen and (min-width: 72em) {
+        margin: 0;
+        margin-bottom: 2.4rem;
+        max-width: revert;
+        padding: 1.7rem;
+    }
 
     &__p {
         font-size: 1.5rem;
@@ -96,12 +140,18 @@ body {
 
 .u-margin-bottom-small {
     margin-bottom: 1.6rem;
+
+    @media only screen and (min-width: 72em) {
+        margin-bottom: 3.2rem;
+    }
 }
 
 .u-margin-bottom-16px-20px {
     margin-bottom: 1.6rem;
 
-    // margin-bottom: 2rem;
+    @media only screen and (min-width: 45em) {
+        margin-bottom: 2rem;
+    }
 }
 
 .u-margin-bottom-8px {
